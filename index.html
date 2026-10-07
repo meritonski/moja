@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MojaMatch Support & Help Center</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header / Hero Section -->
+  <header class="hero">
+    <div class="container hero-container">
+      <div class="badge">MojaMatch Support</div>
+      <h1>How can we help you?</h1>
+      <p>Find answers to common questions or reach out directly to our support team.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- Quick Contact Card -->
+    <section class="contact-card">
+      <div class="contact-info">
+        <h2>Need direct assistance?</h2>
+        <p>Our team is here to support you. Drop us an email and we'll get back to you as soon as possible.</p>
+      </div>
+      <a href="mailto:mojamatch@gmail.com" class="btn-primary">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        Email Support
+      </a>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      
+      <div class="faq-accordion">
+        
+        <details class="faq-item" open>
+          <summary class="faq-question">
+            <span>How do I restore my purchases or subscription?</span>
+            <span class="faq-icon">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Go to your Profile settings inside the MojaMatch app and tap <strong>"Restore Purchases"</strong>. Make sure you are logged into the Apple ID account you used to make the original purchase.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>How do I manage or cancel my subscription?</span>
+            <span class="faq-icon">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Subscriptions are managed directly through your Apple ID:</p>
+            <ol>
+              <li>Open the <strong>Settings</strong> app on your iPhone.</li>
+              <li>Tap your name at the top, then tap <strong>Subscriptions</strong>.</li>
+              <li>Select <strong>MojaMatch</strong> and tap <strong>Cancel Subscription</strong>.</li>
+            </ol>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>How do I delete my account or personal data?</span>
+            <span class="faq-icon">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>You can delete your account inside the app by opening Settings &gt; Account &gt; Delete Account. Alternatively, send a request to <a href="mailto:mojamatch@gmail.com">mojamatch@gmail.com</a> with your registered username.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>The app is crashing or freezing. What should I do?</span>
+            <span class="faq-icon">+</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Try the following troubleshooting steps:</p>
+            <ul>
+              <li>Force restart the MojaMatch app.</li>
+              <li>Ensure you have updated to the latest version in the App Store.</li>
+              <li>Restart your iPhone.</li>
+              <li>If the issue persists, reach out to us with your device model and iOS version.</li>
+            </ul>
+          </div>
+        </details>
+
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="form-section">
+      <div class="form-header">
+        <h2>Send Us a Message</h2>
+        <p>Fill out the form below and it will prepare an email directly to <strong>mojamatch@gmail.com</strong>.</p>
+      </div>
+
+      <form id="support-form">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" placeholder="John Doe" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" placeholder="john@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Issue / Topic</label>
+          <select id="subject" required>
+            <option value="General Inquiry">General Inquiry</option>
+            <option value="Account & Login Issue">Account & Login Issue</option>
+            <option value="Billing & Subscription">Billing & Subscription</option>
+            <option value="Bug Report">Bug Report</option>
+            <option value="Feature Request">Feature Request</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Describe your issue or feedback in detail..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; <span id="year"></span> MojaMatch. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="mailto:mojamatch@gmail.com">Privacy Policy</a>
+        <span>•</span>
+        <a href="mailto:mojamatch@gmail.com">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
